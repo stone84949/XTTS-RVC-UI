@@ -32,7 +32,7 @@ def download_models():
 	for file in xtts_files:
 		if(not os.path.isfile(f'./models/xtts/{file}')):
 			print(f'Downloading {file}')
-			r = requests.get(f'https://huggingface.co/coqui/XTTS-v2/resolve/v2.0.2/{file}')
+			r = requests.get(f'https://huggingface.co/coqui/XTTS-v2/resolve/v2.0.3/{file}')
 			with open(f'./models/xtts/{file}', 'wb') as f:
 				f.write(r.content)
 				
@@ -95,7 +95,7 @@ def main():
 
 		refresh_button.click(fn=refresh_dropdowns, outputs=[rvc_dropdown, voice_dropdown])
 
-	interface.launch(server_name="0.0.0.0", server_port=5000, quiet=True)
+	interface.launch(server_name="127.0.0.1", server_port=5000, quiet=True)
 
 # delete later
 
