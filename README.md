@@ -1,5 +1,16 @@
 # XTTS-RVC-UI
 
+This is a Fork of XTTS-RVC-UI that adds realtime typing, updates voice playback to happen right away if any changes are made in the interface, and adds additional temperature and repetition penality sliders to adjust your voice. Made it autoplay only the RVC output.
+
+Note: You can also separately adjust the xtts model's config.json top_k and top_p settings for further tweaking before starting the start.bat. Here is what I am using for that (experimental):
+
+"top_k": 70,
+"top_p": 0.95,
+
+Note2: When you finish typing if it didn't read the entire thing, you can simply press . or spacebar or backspace and it will read the entire sentence during a refresh (usually within 1 or 2 seconds). I have found the best results by using Dragon Naturally Speaking and my microphone. Having it type in the box for me and using a "custom dragon command" word "erase" to erase the box. My dragon step-by-step command is like this, Steps: Control + A, Backspace" when myCommand "erase" is spoken.
+
+Original Repo Info:
+
 This is a simple UI that utilize's [Coqui's XTTSv2](https://github.com/coqui-ai/TTS) paired with RVC functionality to improve output quality.
 
 # Prerequisites
