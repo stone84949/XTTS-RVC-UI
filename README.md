@@ -1,5 +1,12 @@
 # XTTS-RVC-UI
 
+This is a Fork of XTTS-RVC-UI that adds realtime typing and also updates voice right away with any change thing in the interface without pressing enter. It also adds additional temperature and repetition penality sliders to adjust your voice. Note: You can also separately adjust the xtts model's config.json top_k and top_p settings for further tweaking before starting the start.bat. Here is what I am using for that currently (experiment):
+
+"top_k": 70,
+"top_p": 0.95,
+
+Original Repo Info:
+
 This is a simple UI that utilize's [Coqui's XTTSv2](https://github.com/coqui-ai/TTS) paired with RVC functionality to improve output quality.
 
 # Prerequisites
