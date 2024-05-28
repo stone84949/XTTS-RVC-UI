@@ -1,6 +1,6 @@
 # XTTS-RVC-UI
 
-This is a Fork of XTTS-RVC-UI that adds realtime typing, updates voice right away if any changes are made in the interface, and adds additional temperature and repetition penality sliders to adjust your voice. 
+This is a Fork of XTTS-RVC-UI that adds realtime typing, updates voice playback to happen right away if any changes are made in the interface, and adds additional temperature and repetition penality sliders to adjust your voice. 
 
 Note: You can also separately adjust the xtts model's config.json top_k and top_p settings for further tweaking before starting the start.bat. Here is what I am using for that (experimental):
 
